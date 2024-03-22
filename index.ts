@@ -2,12 +2,12 @@
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
   {
-    message: "Enter your First Number : ",
+    message: "Enter First Number : ",
     type: "number",
     name: "firstNumber",
   },
   {
-    message: "Enter yuor Second Number : ",
+    message: "Enter Second Number : ",
     type: "number",
     name: "secondNumber",
   },
@@ -31,3 +31,6 @@ if (answer.operator === "Addition") {
 } else {
   console.log("Pleacs Select Valid Number");
 }
+
+console.log('THE END');
+
