@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 import inquirer from "inquirer";
+console.log("\nWellcome To our Simple Calculator\n");
 const answer = await inquirer.prompt([
     {
-        message: "Enter your First Number : ",
+        message: "Enter The First Number : ",
         type: "number",
         name: "firstNumber",
     },
     {
-        message: "Enter yuor Second Number : ",
+        message: "Enter The Second Number : ",
         type: "number",
         name: "secondNumber",
     },
     {
-        message: "Select one of operator to perform Operation('-')",
+        message: "Select one of operator to perform an Operation('-')",
         type: "list",
         name: "operator",
         choices: ["Addition", "Subtraction", "Multipilcation", "Division"],
@@ -35,3 +36,4 @@ else if (answer.operator === "Division") {
 else {
     console.log("Pleacs Select Valid Number");
 }
+console.log('THE END');
